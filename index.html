@@ -4,228 +4,229 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akshaya V S | Portfolio</title>
-  <meta name="description" content="Beach-themed portfolio website for Akshaya V S." />
+  <meta
+    name="description"
+    content="Portfolio website for Akshaya V S with a left sidebar layout and a clean analytics-focused design."
+  />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <strong>Akshaya V S</strong>
-        <span>Data Analyst</span>
-      </div>
-
-      <nav class="nav" aria-label="Primary">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <div class="social-icons" aria-label="Social links">
-        <a class="icon-link" href="https://github.com/VSakshaya20" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.455-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.748 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.523 2 12 2Z"/>
-          </svg>
-        </a>
-
-        <a class="icon-link" href="https://www.linkedin.com/in/akshaya-vs/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1s2.5 1.12 2.5 2.5ZM.5 8h4V24h-4V8Zm7 0h3.83v2.16h.06c.53-1 1.83-2.16 3.77-2.16C19.2 8 24 10.24 24 16.3V24h-4v-6.8c0-1.62-.03-3.7-2.26-3.7-2.26 0-2.61 1.76-2.61 3.58V24h-4V8Z"/>
-          </svg>
-        </a>
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="sidebar-brand">
+        <h1>Akshaya V S</h1>
+        <p>Data Analyst</p>
       </div>
     </div>
-  </header>
 
-  <main id="main">
-    <section class="hero-wrap" id="home">
-      <div class="container hero-card">
-        <div class="hero-grid">
-          <div class="hero-content">
-            <p class="eyebrow">Data science & analytics</p>
-            <h1>Hi, I’m <span>Akshaya</span></h1>
-            <p class="lead">
-              I build analytical stories with data through dashboards, statistical modeling, and decision-support tools.
-              My portfolio focuses on projects that connect technical work with clear business or policy insights.
-            </p>
-            <p class="tagline">Turning data into clear, practical decisions.</p>
+    <nav class="sidebar-nav" aria-label="Primary">
+      <a class="nav-item active" href="#home">
+        <span class="nav-dot"></span>
+        <span>Home</span>
+      </a>
+      <a class="nav-item" href="#about">
+        <span class="nav-dot"></span>
+        <span>About</span>
+      </a>
+      <a class="nav-item" href="#education">
+        <span class="nav-dot"></span>
+        <span>Education</span>
+      </a>
+      <a class="nav-item" href="#skills">
+        <span class="nav-dot"></span>
+        <span>Skills</span>
+      </a>
+      <a class="nav-item" href="#projects">
+        <span class="nav-dot"></span>
+        <span>Projects</span>
+      </a>
+      <a
+        class="nav-item"
+        href="assets/Resume_Akshaya Vijayakumar Sivakami.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="nav-dot"></span>
+        <span>Resume</span>
+      </a>
+    </nav>
+  </aside>
 
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#projects">View Projects</a>
-              <a class="btn btn-secondary" href="#contact">Contact</a>
-            </div>
-          </div>
+  <main class="page-content" id="main">
+    <section class="hero-panel" id="home">
+      <div class="hero-left">
+        <p class="eyebrow">Data science & analytics</p>
+        <h2 class="hero-title">Hi, I’m Akshaya</h2>
 
-          <div class="hero-side">
-            <article class="quick-card">
-              <span class="label">Focus</span>
-              <strong>Analytics, dashboards, and data storytelling</strong>
-            </article>
+        <p class="intro">
+          I turn data into clear, actionable insights.
+        </p>
 
-            <article class="quick-card">
-              <span class="label">Tools</span>
-              <strong>R, Python, SQL, Excel, Shiny, Quarto</strong>
-            </article>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="assets/Resume_Akshaya Vijayakumar Sivakami.pdf">View Resume</a>
+        </div>
+      </div>
 
-            <article class="quick-card">
-              <span class="label">Availability</span>
-              <strong>Available to intern for 6 months from June to Dec 2026</strong>
-            </article>
-          </div>
+      <div class="hero-right">
+        <div class="photo-card">
+          <img src="images/IMG_3529.jpeg" alt="Portrait of Akshaya V S">
+        </div>
+
+        <div class="profile-stack">
+          <a class="profile-link" href="mailto:akshayavijay20@gmail.com" aria-label="Email Akshaya">
+            <span class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                <path d="M3 7l9 6 9-6"></path>
+              </svg>
+            </span>
+            <span>akshayavijay20@gmail.com</span>
+          </a>
+
+          <a
+            class="profile-link"
+            href="https://www.linkedin.com/in/akshaya-vs"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+          >
+            <span class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1s2.5 1.12 2.5 2.5ZM.5 8h4V24h-4V8Zm7 0h3.83v2.16h.06c.53-1 1.83-2.16 3.77-2.16C19.2 8 24 10.24 24 16.3V24h-4v-6.8c0-1.62-.03-3.7-2.26-3.7-2.26 0-2.61 1.76-2.61 3.58V24h-4V8Z"/>
+              </svg>
+            </span>
+            <span>LinkedIn</span>
+          </a>
+
+          <a
+            class="profile-link"
+            href="https://github.com/VSakshaya20"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
+          >
+            <span class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.455-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.748 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.523 2 12 2Z"/>
+              </svg>
+            </span>
+            <span>GitHub</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <div class="container section-grid">
-      <section class="panel" id="about">
-        <h2>About</h2>
-        <p>
-          Write your about section here. You can introduce your background, what kind of work you enjoy,
-          what problems you like solving, and what kind of roles you are looking for.
-          This placeholder is here so you can replace it later with your own final text.
-        </p>
-      </section>
+    <section class="panel" id="about">
+      <h2>About</h2>
+      <p>
+        I’m Akshaya Vijayakumar Sivakami, a Master of IT in Business student at Singapore Management
+        University with an interest in data analytics, visualization, and decision-focused problem
+        solving. I enjoy turning data into insights through dashboards, statistical analysis, and
+        business storytelling.
+      </p>
+    </section>
 
-      <section class="panel" id="skills">
-        <h2>Skills</h2>
+    <section class="panel" id="education">
+      <h2>Education</h2>
+      <div class="education-wrap">
+        <article class="education-box">
+          <strong>Master of IT in Business (Data Science & Analytics)</strong>
+          <span>Singapore Management University</span>
+          <span>Expected graduation: December 2026</span>
+        </article>
+        
+        <article class="education-box">
+          <strong>B.Tech Electronics and Communication Engineering</strong>
+          <span>Vellore Institute of Technology</span>
+          <span>Graduated: June 2024</span>
+        </article>
+      </div>
+    </section>
 
-        <div class="skills-wrap">
-          <article class="skill-box">
-            <h3>Data Engineering</h3>
-            <ul>
-              <li>Data cleaning</li>
-              <li>Excel</li>
-              <li>SQL workflows</li>
-            </ul>
-          </article>
+    <section class="panel" id="skills">
+      <h2>Skills</h2>
+      <div class="skills-wrap">
+        <article class="skill-box">
+          <h3>Data Engineering</h3>
+          <ul>
+            <li>Data cleaning</li>
+            <li>Data preparation</li>
+            <li>Spreadsheet modeling</li>
+            <li>SQL</li>
+          </ul>
+        </article>
 
-          <article class="skill-box">
-            <h3>Data Visualization</h3>
-            <ul>
-              <li>ggplot2</li>
-              <li>Shiny dashboards</li>
-              <li>Tableau</li>
-              <li>Power BI</li>
-            </ul>
-          </article>
+        <article class="skill-box">
+          <h3>Visualization</h3>
+          <ul>
+            <li>ggplot2</li>
+            <li>Shiny dashboards</li>
+            <li>Interactive reports</li>
+            <li>Storytelling</li>
+          </ul>
+        </article>
 
-          <article class="skill-box">
-            <h3>Programming</h3>
-            <ul>
-              <li>R</li>
-              <li>Python</li>
-              <li>HTML/CSS</li>
-            </ul>
-          </article>
+        <article class="skill-box">
+          <h3>Programming</h3>
+          <ul>
+            <li>R</li>
+            <li>Python</li>
+            <li>HTML/CSS</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </article>
 
-          <article class="skill-box">
-            <h3>Business Analytics</h3>
-            <ul>
-              <li>Forecasting</li>
-              <li>Sensitivity analysis</li>
-              <li>Decision modeling</li>
-              <li>Reporting</li>
-            </ul>
-          </article>
+        <article class="skill-box">
+          <h3>Business Analytics</h3>
+          <ul>
+            <li>Forecasting</li>
+            <li>Sensitivity analysis</li>
+            <li>Decision modeling</li>
+            <li>Reporting</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-          <article class="skill-box">
-            <h3>Machine Learning</h3>
-            <ul>
-              <li>Clustering</li>
-              <li>Regression</li>
-              <li>Classification basics</li>
-              <li>Model interpretation</li>
-            </ul>
-          </article>
-        </div>
-      </section>
+    <section class="panel" id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <span class="project-type">Healthcare</span>
+          <h3>Singapore Healthcare Sustainability Model</h3>
+          <p>
+            Forecasting demand, hospital capacity, costs, and financing sustainability through 2035.
+          </p>
+        </article>
 
-      <section class="panel" id="projects">
-        <h2>Projects</h2>
+        <article class="project-card">
+          <span class="project-type">Mobility</span>
+          <h3>Seoul Bike Rental Demand Analysis</h3>
+          <p>
+            Regression-based analysis of weather and time effects on bike rental demand.
+          </p>
+        </article>
 
-        <div class="projects-grid">
-          <article class="project-card">
-            <span class="project-type">Healthcare</span>
-            <h3>Singapore Healthcare Sustainability Model</h3>
-            <p>
-              Spreadsheet-based forecasting of demand, hospital capacity, costs, and financing sustainability through 2035.
-            </p>
-          </article>
-
-          <article class="project-card">
-            <span class="project-type">Mobility</span>
-            <h3>Seoul Bike Rental Demand Analysis</h3>
-            <p>
-              Regression-based analysis of weather and temporal effects on bike rental demand with clear operational insights.
-            </p>
-          </article>
-
-          <article class="project-card">
-            <span class="project-type">Storytelling</span>
-            <h3>Obesity Beyond the Numbers</h3>
-            <p>
-              A public-health storytelling project that frames obesity through context, interpretation, and accessible communication.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="panel" id="contact">
-        <h2>Contact</h2>
-        <p>You can keep direct contact details here and also repeat your social links as icons.</p>
-
-        <div class="contact-grid">
-          <div class="contact-list">
-            <article class="contact-item">
-              <span>Email</span>
-              <a href="mailto:your.email@example.com">your.email@example.com</a>
-            </article>
-
-            <article class="contact-item">
-              <span>Phone</span>
-              <p>+65 XXXX XXXX</p>
-            </article>
-
-            <article class="contact-item">
-              <span>LinkedIn</span>
-              <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-                linkedin.com/in/yourusername
-              </a>
-            </article>
-          </div>
-
-          <aside class="contact-card">
-            <strong>Social links</strong>
-            <p>Use these icon buttons for your GitHub and LinkedIn pages. Replace the placeholder URLs with your own profiles.</p>
-
-            <div class="social-icons" aria-label="Contact social links">
-              <a class="icon-link" href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.455-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.748 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.523 2 12 2Z"/>
-                </svg>
-              </a>
-
-              <a class="icon-link" href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1s2.5 1.12 2.5 2.5ZM.5 8h4V24h-4V8Zm7 0h3.83v2.16h.06c.53-1 1.83-2.16 3.77-2.16C19.2 8 24 10.24 24 16.3V24h-4v-6.8c0-1.62-.03-3.7-2.26-3.7-2.26 0-2.61 1.76-2.61 3.58V24h-4V8Z"/>
-                </svg>
-              </a>
-            </div>
-          </aside>
-        </div>
-      </section>
-    </div>
+        <article class="project-card">
+          <span class="project-type">Storytelling</span>
+          <h3>Obesity Beyond the Numbers</h3>
+          <p>
+            A public-health storytelling project focused on context, interpretation, and accessibility.
+          </p>
+        </article>
+      </div>
+    </section>
   </main>
-
-  <footer>
-    <div class="container">Designed with a beach-inspired palette of sky blue, sandy brown, dark blue, and white.</div>
-  </footer>
 </body>
 </html>
