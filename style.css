@@ -127,23 +127,16 @@ svg {
 
 .nav-item.active {
   color: #6cbcff;
-  background: rgba(14, 43, 78, 0.72);
+  background: transparent;
 }
 
 .nav-item.active::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 10px;
-  bottom: 10px;
-  width: 4px;
-  background: #63bbff;
-  border-radius: 0 999px 999px 0;
+  display: none;
 }
 
 .nav-item.active .nav-dot {
   background: #63bbff;
-  box-shadow: 0 0 14px rgba(99, 187, 255, 0.55);
+  box-shadow: none;
 }
 
 .page-content {
@@ -470,4 +463,60 @@ svg {
   .profile-stack {
     max-width: 100%;
   }
+}
+
+.project-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.icon-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(234, 246, 255, 0.9);
+  border: 1px solid rgba(216, 196, 164, 0.35);
+  color: var(--navy);
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+
+.icon-btn:hover {
+  transform: translateY(-1px);
+  background: rgba(214, 236, 250, 0.95);
+}
+
+.icon-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.btn {
+  min-height: 46px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--navy);
+  color: white;
+}
+
+.project-type-muted {
+  background: rgba(244, 237, 226, 0.9);
+  color: #8a7a60;
+}
+
+.btn-disabled {
+  background: #d9dee6;
+  color: #6b7280;
+  cursor: not-allowed;
+  pointer-events: none;
 }
