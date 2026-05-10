@@ -428,6 +428,16 @@ svg {
 }
 
 .project-tag-muted {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 1rem;
+  padding: 0.38rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;  
   background: rgba(244, 237, 226, 0.9);
   color: #8a7a60;
 }
@@ -552,7 +562,7 @@ svg {
     padding: 18px 16px 32px;
   }
 
-  .education-wrap,
+  .background-wrap,
   .skills-wrap,
   .projects-grid {
     grid-template-columns: 1fr;
